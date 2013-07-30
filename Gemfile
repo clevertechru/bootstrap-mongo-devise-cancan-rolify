@@ -15,6 +15,10 @@ gem 'haml-rails'
 gem 'mongoid'
 gem 'rolify'
 gem 'simple_form'
+gem "omniauth", ">= 1.1.4"
+gem "omniauth-github", ">= 1.1.0"
+#gem "omniauth-twitter"
+#gem "omniauth-vkontakte"
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :rbx]
@@ -32,6 +36,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'rspec-rails'
   gem 'thin'
+  gem 'pry-rails'
 end
 group :production do
   gem 'unicorn'
